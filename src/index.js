@@ -1,12 +1,9 @@
-module.exports = function reverse(n) {
+module.exports = function reverse (n) {
     let result = '';
-    let sliceN = Math.abs(n);
-    for (let i = 0; i < sliceN.length; i++) {
+    let sliceN = Math.abs(n).toString();
+    for (let i = 0; i < sliceN.length; i += 1) {
         result = `${sliceN[i]}${result}`;
     }
     return result;
 }
-
-console.log(reverse(2281));
-
 
